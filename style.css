@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #fcf5c7;
+  text-align: center;
+} 
+.navbar{
+  border-bottom: 1px solid grey;
+}
+
+.nav__logo{
+  width: 150px;
+  height: 150px;
+}
+
+.nav-item{
+  margin: 25px;
+}
+.nav-item:hover{
+  text-decoration: underline red ;
+}
+
+
+
+.nav-link{
+  font-family: "Tungsten", sans-serif;
+  font-size: 35px;
+}
+
+@font-face {
+  font-family: "Tungsten";
+  src: url(./fonts/Tungsten-Bold.ttf) format("truetype");
+}
+.section--A{
+  margin-bottom: 50px;
+}
+.d-block {
+  height: 200px;
+}
+
+ .section--B{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .section__titulo{
+  font-family: 'Teko', sans-serif;
+  font-size:  30px;
+  color: red;
+  letter-spacing: 3px;
+  padding: 5%;
+  border: 5px double #461220;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  width: 100%;
+
+ }
+ .section__container{
+  margin-top: 20px;
+  display: grid;
+
+  }
+
+.container__destacados{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.container__destacados--imagen{
+  width: 100%;
+}
+
+.productos__descripcion{
+  font-family: "Tungsten", sans-serif;
+  letter-spacing: 1px;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  border: 5px double #461220;
+  padding: 2%;
+  background-color: #cadbc0;
+  width: 50%;
+}
+.article__iframe{
+  display: none;
+}
+.article_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-top: 50px;
+}
+.article__listado--marcas{
+  width: 60%;
+
+  list-style: none;
+
+}
+.listado__logo{
+  width: 100%;
+  margin-top: 20px;
+}
+#footer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+}
+.footer__container{
+  display: block;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+ 
+}
+.footer__titulo{
+  font-family: 'DM Serif Display', serif;
+  padding: 5px;
+  
+}
+.footer__container--redes{
+  display: flex;
+  justify-content: center;
+  
+}
+.redes__icono{
+  width: 50px;
+  margin: 25px;
+}
+.footer__input--enviar{
+  width: 100px;
+  border: 3px solid black;
+}
+/* INICIO PRODUCTOS */
+.productos__imagen{
+  width: 60%;
+  height: 70%;
+}
+.productos__card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+
+}
+.main__filtro--container{
+  display: none;
+}
+.main__container{
+  margin-top: 0px;
+  background-color: #fcf5c7;
+}
+.section__titulo{
+  margin-top: 0px;
+}
+
+/* INICIO QUIENES SOMOS */
+#quienes_somos{
+margin: 1% 15%;
+}
+.article__parrafo{
+  font-family: 'DM Serif Display', serif;
+  font-size: 20px;
+}
+
+/* INICIO FAQ */
+#preguntas_frecuentes{
+  margin: 1% 15%;
+}
+
+/* INICIO CONTACTO */
+#formulario_pag{
+  display: flex;
+  flex-direction: column;
+
+}
+input{
+  width: 100%;
+}
+label{
+  width: 100%;
+}
+textarea{
+  width: 90%;
+}
+
+@media screen and (min-width: 768px){
+
+  
+  .d-block {
+    height: 300px;
+  }
+  .section--A{
+    margin: 1% 5%;
+  }
+  .section--B{
+    margin: 10% 5%;
+  }
+  .article__iframe{
+    display: block;
+    margin:  1%;;
+    width: 100%;
+    height: 400px;
+  }
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+  .article_container{
+    margin: 1% 5%;
+  }
+  .container__destacados--imagen{
+    width: 350px;
+  }
+  
+}
+@media screen and (min-width: 1024px){
+  .nav__logo{
+    width: 300px;
+    height: 300px;
+  }
+ .nav__listado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .nav__listado{
+  font-size: 70px;
+  
+ }
+ .d-block{
+  width: auto;
+  height: auto;
+ }
+ .section__titulo{
+  font-family: 'Teko', sans-serif;
+  font-size: 80px;
+  background-color: burlywood;
+ }
+ .section__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+ }
+ .article__iframe{
+  margin-top: 50px;
+  margin-bottom: 50px;
+ }
+ iframe{
+  width: 1000px;
+  height: 600px;
+ 
+ }
+ .article__listado--marcas{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10%;
+  align-items: center;
+  width: 100%;
+ }
+ .listado__logo{
+  width: 100%;
+  height: auto;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
