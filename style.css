@@ -4,8 +4,11 @@
   background-color: #fcf5c7;
   text-align: center;
 } 
+/* INICIO NAVBAR */
 .navbar{
   border-bottom: 1px solid grey;
+
+  z-index: 9;
 }
 
 .nav__logo{
@@ -21,7 +24,6 @@
 }
 
 
-
 .nav-link{
   font-family: "Tungsten", sans-serif;
   font-size: 35px;
@@ -31,34 +33,32 @@
   font-family: "Tungsten";
   src: url(./fonts/Tungsten-Bold.ttf) format("truetype");
 }
-.section--A{
+/* INICIO INDEX */
+.section--slider{
   margin-bottom: 50px;
 }
 .d-block {
   height: 200px;
 }
 
- .section--B{
+ .section--lideresmarcas{
   display: flex;
   flex-direction: column;
+  margin: 0px 5%;
  }
 
  .section__titulo{
   font-family: 'Teko', sans-serif;
   font-size:  30px;
-  color: red;
+  color: burlywood;
+  background-color:#461220;
   letter-spacing: 3px;
   padding: 5%;
-  border: 5px double #461220;
-  margin-top: 1em;
-  margin-bottom: 1em;
   text-align: center;
-  width: 100%;
 
  }
  .section__container{
   margin-top: 20px;
-  display: grid;
 
   }
 
@@ -91,26 +91,31 @@
   align-items: center;
   border-bottom: 1px solid black;
   margin-top: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100%;
+  
 }
 .article__listado--marcas{
   width: 60%;
-
   list-style: none;
-
 }
 .listado__logo{
   width: 100%;
   margin-top: 20px;
 }
+/* INICIO FOOTER */
 #footer{
   display: flex;
   flex-direction: column;
-  margin-top: 0px;
+ 
 }
 .footer__container{
   display: block;
-  border-bottom: 1px solid white;
-  margin-bottom: 20px;
+  border-bottom: 1px solid wheat;
+  padding-top: 50px;
+  
+
  
 }
 .footer__titulo{
@@ -127,20 +132,31 @@
   width: 50px;
   margin: 25px;
 }
+.footer__container--newsletter{
+  padding-bottom: 30%;
+}
+.input_email{
+  margin-top: 20px;
+}
 .footer__input--enviar{
-  width: 100px;
-  border: 3px solid black;
+  border-radius: 20px;
+  background-color: #461220;
+  height: 40px;
+  width: 140px;
+  color: white;
+  margin-top: 20px;
 }
 /* INICIO PRODUCTOS */
 .productos__imagen{
   width: 60%;
-  height: 70%;
+  height: 60%;
 }
 .productos__card{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 5%;
+  background-color: #fcf5c7;
 
 }
 .main__filtro--container{
@@ -148,30 +164,39 @@
 }
 .main__container{
   margin-top: 0px;
+  margin-bottom: 0px;
   background-color: #fcf5c7;
+  display: flex;
+  flex-direction: column;
 }
-.section__titulo{
-  margin-top: 0px;
-}
+
 
 /* INICIO QUIENES SOMOS */
 #quienes_somos{
-margin: 1% 15%;
+display: flex;
+flex-direction: column;
 }
 .article__parrafo{
   font-family: 'DM Serif Display', serif;
   font-size: 20px;
+  margin: 1em 10%;
 }
 
 /* INICIO FAQ */
+
+
 #preguntas_frecuentes{
-  margin: 1% 15%;
+display: flex;
+flex-direction: column;
+
 }
+
 
 /* INICIO CONTACTO */
 #formulario_pag{
   display: flex;
   flex-direction: column;
+
 
 }
 input{
@@ -185,70 +210,118 @@ textarea{
 }
 
 @media screen and (min-width: 768px){
-
+/* INDEX NAV Y FOOTER */
+.navbar{
+  padding-bottom: 50px;
+}
   
   .d-block {
     height: 300px;
   }
-  .section--A{
-    margin: 1% 5%;
+  .section__titulo{
+    width: 100%;
+   margin-top: 50px;
   }
-  .section--B{
+  .section--slider{
+    margin: 0% 5%;
+  }
+  .section--lideresmarcas{
     margin: 10% 5%;
   }
   .article__iframe{
     display: block;
-    margin:  1%;;
     width: 100%;
     height: 400px;
+    margin-top: 50px;
   }
   iframe{
     width: 100%;
     height: 100%;
+    
   }
   .article_container{
-    margin: 1% 5%;
+    margin: 0% 5%;
   }
   .container__destacados--imagen{
     width: 350px;
   }
+  .footer__input--enviar{
+    border-radius: 20px;
+    background-color: #461220;
+    color: white;
+    width: 25%;
+   }
+   .input_email{
+    width: 50%;
+   }
+   /* PRODUCTOS */
+
+   .productos__imagen{
+    width: 200px;
+    height: 200px;
+   }
   
-}
-@media screen and (min-width: 1024px){
-  .nav__logo{
+  }
+@media screen and (min-width: 1024px) {
+  /* INDEX */
+  body{
+    background-color: #fcf5c7;
+  }
+  .button__navbar{
+   max-height: 50px;
+  }
+  .nav__logo {
     width: 300px;
     height: 300px;
   }
- .nav__listado{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navbar {
+  margin: 0% 5%;
+}
+ .nav-link {
+  font-family: 'Teko', sans-serif;
+  font-size: 3em;
+  margin-right: 50px;
  }
- .nav__listado{
-  font-size: 70px;
-  
+
+ .section--slider {
+  margin-bottom: 40px;
+  margin-top: 100px;
+ }
+ .section--lideresmarcas {
+  margin-top: 100px;
  }
  .d-block{
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
  }
  .section__titulo{
   font-family: 'Teko', sans-serif;
-  font-size: 80px;
-  background-color: burlywood;
+  color: burlywood;
+  font-size: 70px;
+  text-align: center;
+  background-color:#461220;
+  padding:0%;
+  
  }
  .section__container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
  }
+ .productos__descripcion{
+  margin-top: 20px;
+ }
  .article__iframe{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
  }
  iframe{
-  width: 1000px;
-  height: 600px;
+  width: 90%;
+  height: 150%;
  
+ }
+ .article_container .section__titulo{
+  width: 100%;
+
  }
  .article__listado--marcas{
   display: grid;
@@ -256,32 +329,114 @@ textarea{
   column-gap: 10%;
   align-items: center;
   width: 100%;
+ 
  }
  .listado__logo{
   width: 100%;
   height: auto;
  }
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ .input_email{
+  width: 30%;
+ }
+  input .footer__input--enviar{
+  border-radius: 20px;
+  background-color: #461220;
+  color: white;
+  width: 15%;
+ }
+ .footer__container--newsletter{
+  padding-bottom: 2%;
+ }
+ /* PRODUCTOS */
+ .main__container{
+  margin: 0% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: start;
 }
+  .main__filtro--container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   }
+ 
+ .filtro__listado--item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+ }
+ .filtro__checkbox{
+  height: 20px;
+  width: 20px;
+ }
+ 
+ #quienes_somos{
+  margin: 0px 5%;
+  padding-bottom: 0px;
+ }
+#preguntas_frecuentes{
+  margin: 0% 5%;
+  padding-bottom: 10%;
+  border-bottom: 1px solid black;
+  
+}
+#formulario_pag{
+  margin:  0px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.formulario{
+  height: 200%;
+  text-align: center;
+  
+}
+input{
+  height: 50px;
+  font-size: 30px;
+  margin-bottom:  30px;
+}
+label{
+  font-size: 30px;
+  color :yellow;
+  background-color: black;
+  margin-bottom: 50px;
+}
+select{
+  height: auto;
+  width: auto;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+textarea{
+  font-size: 30px;
+  height: 150px;
+}
+.botones{
+  width: 350px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
