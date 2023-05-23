@@ -294,11 +294,11 @@ label{
     background-color: #fcf5c7;
   }
   .botones {
-    width: 350px;
+   
     margin-bottom: 25px;
     background-color: aquamarine;
     border-radius: 5px;
-    width: 30%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1024px) {
