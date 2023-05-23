@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CONTACTO - SDS</title>
-    <link rel="shortcut icon" href="../img/Logo.jpeg" />
+    <link rel="shortcut icon" href="../img/LOGO-removebg-preview.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -97,28 +97,28 @@
         contactaremos con vos a la brevedad
       </p>
       <form class="formulario" action="" method="get" enctype="text/plain">
-        <label for="nombre">NOMBRE</label>
-        <input type="text" required placeholder="Introduzca su Nombre" />
-        <label for="apellido">APELLIDO</label>
-        <input type="text" required placeholder="Introduzca su apellido" />
-        <label for="email">EMAIL</label>
-        <input
+        <label class="formulario__elemento" for="nombre">NOMBRE</label>
+        <input class="formulario__elemento" type="text" required placeholder="Introduzca su Nombre" />
+        <label class="formulario__elemento" for="apellido">APELLIDO</label>
+        <input class="formulario__elemento" type="text" required placeholder="Introduzca su apellido" />
+        <label class="formulario__elemento" for="email">EMAIL</label>
+        <input class="formulario__elemento"
           type="email"
           name=""
           id=""
           required
           placeholder="Introduzca su Email"
         />
-        <label for="razon_contacto">RAZON DE CONTACTO</label>
-        <select name="razon_contacto" id="">
+        <label class="formulario__elemento" for="razon_contacto">RAZON DE CONTACTO</label>
+        <select class="formulario__elemento" name="razon_contacto" id="">
           <option value="venta_mayorista" <>Ventas Mayoristas</option>
           <option value="servcio_postventa">Servicio Post-venta</option>
           <option value="devoluciones">Devoluciones de Compras</option>
           <option value="reclamos_sugerencias">Reclamos y/o Sugerencias</option>
           <option value="otras">Otras razones</option>
         </select>
-        <label for="textarea">ESCRIBA SU MENSAJE</label>
-        <textarea
+        <label class="formulario__elemento" for="textarea">ESCRIBA SU MENSAJE</label>
+        <textarea class="formulario__elemento"
           name="textarea"
           id=""
           cols="10"
@@ -133,7 +133,7 @@
     </main>
     <footer id="footer">
       <div class="footer__container">
-        <h3 class="footer__titulo">Six Days Supps 2023. Todos los derechos reservados.</h3>
+        <h3 class="footer__titulo">© Six Days Supps 2023. Todos los derechos reservados.</h3>
       </div>
       </div>
       <div class="footer__container">
@@ -144,12 +144,12 @@
           <img class="redes__icono" src="../img/tw.png" alt="twitter" />
         </div>
       </div>
-      <div class="footer__container">
+      <div class="footer__container--newsletter">
         <h4 class="footer__titulo">
           Suscribete a nuestro newsletter para enterarte de todas las novedades.
         </h4>
         <input class="input_email" type="email" />
-        <input class="footer__input--enviar" type="button" value="Enviar" />
+        <input class="footer__input--enviar" type="button" value="ENVIAR" />
       </div>
     </footer>
     <script
