@@ -1,0 +1,21 @@
+/* INICIO FAQ */
+$background-titulos: #461220;
+$limites-bloques: 1px solid black;
+$margenes-bloques: 0% 5%;
+$subtitulos: red;
+
+#preguntas_frecuentes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: $limites-bloques;
+    padding-bottom: 50px;
+    margin: $margenes-bloques;
+  }
+  .titulares{
+    background-color: $background-titulos;
+    color: #fcf5c7;
+  }
+  .subtitulos{
+    color: $subtitulos;
+  }

@@ -1,0 +1,20 @@
+// INICIO NAVBAR
+.navbar {
+    border-bottom: 1px solid grey;
+    margin: 0% 5%;
+  }
+  .nav__logo {
+    width: 150px;
+    height: 150px;
+  }
+  .nav-item {
+    margin: 25px;
+    &:hover {
+        text-decoration: underline red;
+    }
+  }
+  
+  .nav-link {
+    font-family: "Tungsten", sans-serif;
+    font-size: 35px;
+  }

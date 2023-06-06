@@ -1,0 +1,18 @@
+/* INICIO QUIENES SOMOS */
+
+$margenes-bloques: 0% 5%;
+$limites-bloques: 1px solid black;
+#quienes_somos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: $limites-bloques;
+    margin: $margenes-bloques;
+    padding-bottom: 50px;
+  }
+  .article__parrafo {
+    font-family: "DM Serif Display", serif;
+    font-size: 20px;
+    margin: 1em 10%;
+  }
+  

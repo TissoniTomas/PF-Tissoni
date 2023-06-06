@@ -1,0 +1,17 @@
+
+
+@use "index";
+@use "productos";
+@use "quienes-somos";
+@use "preguntas-frecuentes";
+@use "contacto";
+@use "./assets/nav-bar";
+@use "./assets/footer";
+@use "./assets/media-queries-t";
+@use "./assets/media-queries-d";
+
+
+@font-face {
+    font-family: "Tungsten";
+    src: url(../fonts/Tungsten-Bold.ttf) format("truetype");
+    }

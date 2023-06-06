@@ -1,0 +1,28 @@
+/* INICIO PRODUCTOS */
+
+$max-height:100%;
+$max-width:100%;
+$limites-bloques: 1px solid black;
+$backgronund-color:#fcf5c7;
+.productos__imagen {
+    width: $max-width*0.6;
+    height: $max-height*0.8;
+  }
+  .productos__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+  }
+  .main__filtro--container {
+    display: none;
+  }
+  .main__container {
+    background-color: $backgronund-color;
+    display: flex;
+    flex-direction: column;
+    border-bottom: $limites-bloques;
+    padding-bottom: 50px;
+    margin: 0% 5%;
+  }
+  

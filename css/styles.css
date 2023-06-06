@@ -1,10 +1,187 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #fcf5c7;
+}
+
+/* INICIO INDEX */
+.bg-sds {
+  background-color: #fcf5c7 !important;
+}
+
+.section--slider {
+  margin-bottom: 50px;
+}
+
+.d-block {
+  height: 200px;
+}
+
+.section--lideresmarcas {
+  display: flex;
+  flex-direction: column;
+  margin: 0% 5%;
+}
+
+.section__titulo {
+  font-family: "Teko", sans-serif;
+  font-size: 30px;
+  color: burlywood;
+  background-color: #461220;
+  letter-spacing: 3px;
+  padding: 5%;
   text-align: center;
 }
-/* INICIO NAVBAR */
+
+.section__container {
+  margin-top: 20px;
+}
+
+.container__destacados--imagen {
+  width: 100%;
+}
+
+.productos__descripcion {
+  font-family: "Tungsten", sans-serif;
+  letter-spacing: 1px;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  border: 5px double #461220;
+  padding: 2%;
+  background-color: #cadbc0;
+  width: 50%;
+}
+
+.article__iframe {
+  display: none;
+}
+
+.article_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100%;
+}
+
+.article__listado--marcas {
+  width: 60%;
+  list-style: none;
+}
+
+.listado__logo {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* INICIO PRODUCTOS */
+.productos__imagen {
+  width: 60%;
+  height: 80%;
+}
+
+.productos__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.main__filtro--container {
+  display: none;
+}
+
+.main__container {
+  background-color: #fcf5c7;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  padding-bottom: 50px;
+  margin: 0% 5%;
+}
+
+/* INICIO QUIENES SOMOS */
+#quienes_somos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: 1px solid black;
+  margin: 0% 5%;
+  padding-bottom: 50px;
+}
+
+.article__parrafo {
+  font-family: "DM Serif Display", serif;
+  font-size: 20px;
+  margin: 1em 10%;
+}
+
+/* INICIO FAQ */
+#preguntas_frecuentes {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 50px;
+  margin: 0% 5%;
+}
+
+.titulares {
+  background-color: #461220;
+  color: #fcf5c7;
+}
+
+.subtitulos {
+  color: red;
+}
+
+/* INICIO CONTACTO */
+#formulario_pag {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  padding-bottom: 50px;
+  margin: 0% 5%;
+  text-align: center;
+}
+
+.formulario__elemento {
+  width: 80%;
+  font-family: "DM Serif Display", serif;
+  border-radius: 5px;
+  text-align: center;
+}
+
+label {
+  color: yellow;
+  background-color: black;
+  margin: 20px 0px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.formulario__textarea {
+  width: 100%;
+  font-family: "DM Serif Display", serif;
+}
+
+.botones {
+  background-color: aquamarine;
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+
 .navbar {
   border-bottom: 1px solid grey;
   margin: 0% 5%;
@@ -27,108 +204,43 @@
   font-size: 35px;
 }
 
-@font-face {
-  font-family: "Tungsten";
-  src: url(../fonts/Tungsten-Bold.ttf) format("truetype");
-}
-/* INICIO INDEX */
-.section--slider {
-  margin-bottom: 50px;
-}
-.d-block {
-  height: 200px;
-}
-
-.section--lideresmarcas {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 5%;
-}
-
-.section__titulo {
-  font-family: "Teko", sans-serif;
-  font-size: 30px;
-  color: burlywood;
-  background-color: #461220;
-  letter-spacing: 3px;
-  padding: 5%;
-  text-align: center;
-}
-.section__container {
-  margin-top: 20px;
-}
-
-.container__destacados {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-}
-.container__destacados--imagen {
-  width: 100%;
-}
-
-.productos__descripcion {
-  font-family: "Tungsten", sans-serif;
-  letter-spacing: 1px;
-  font-size: 150%;
-  font-weight: bold;
-  text-align: center;
-  border: 5px double #461220;
-  padding: 2%;
-  background-color: #cadbc0;
-  width: 50%;
-}
-.article__iframe {
-  display: none;
-}
-.article_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: 1px solid black;
-  padding-bottom: 50px;
-  margin-top: 50px;
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 100%;
-}
-.article__listado--marcas {
-  width: 60%;
-  list-style: none;
-}
-.listado__logo {
-  width: 100%;
-  margin-top: 20px;
-}
 /* INICIO FOOTER */
 #footer {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
+
 .footer__container {
   display: block;
   border-bottom: 1px solid wheat;
   padding-top: 50px;
 }
+
 .footer__titulo {
   font-family: "DM Serif Display", serif;
   padding: 5px;
 }
+
 .footer__container--redes {
   display: flex;
   justify-content: center;
 }
+
 .redes__icono {
   width: 50px;
   margin: 25px;
 }
+
 .footer__container--newsletter {
   padding-bottom: 30%;
 }
+
 .input_email {
   margin-top: 20px;
   width: 60%;
 }
+
 .footer__input--enviar {
   border-radius: 20px;
   background-color: #461220;
@@ -137,108 +249,13 @@
   color: white;
   margin-top: 20px;
 }
-/* INICIO PRODUCTOS */
-.productos__imagen {
-  width: 60%;
-  height: 60%;
-}
-.productos__card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 5%;
-}
-.main__filtro--container {
-  display: none;
-}
-.main__container {
-  background-color: #fcf5c7;
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid black;
-  padding-bottom: 50px;
-  margin: 0% 5%;
-}
 
-/* INICIO QUIENES SOMOS */
-#quienes_somos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  border-bottom: 1px solid black;
-  margin: 0% 5%;
-  padding-bottom: 50px;
-}
-.article__parrafo {
-  font-family: "DM Serif Display", serif;
-  font-size: 20px;
-  margin: 1em 10%;
-}
-
-/* INICIO FAQ */
-
-#preguntas_frecuentes {
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid black;
-  padding-bottom: 50px;
-  margin: 0% 5%;
-}
-.titulares{
-  background-color: #461220;
-  color: #fcf5c7;
-}
-.subtitulos{
-  color: red;
-}
-/* INICIO CONTACTO */
-#formulario_pag {
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid black;
-  padding-bottom: 50px;
-  margin: 0% 5%;
-  
-}
-#body__contacto{
-  background-color: #fcf5c7;
-}
-.formulario__elemento {
-  width: 80%;
-  font-family: "DM Serif Display", serif;
-  border-radius: 5px;
-}
-label{
-  color: yellow;
-    background-color: black;
-    margin: 20px 0px;
-}
-.formulario{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 50px;
-}
-.formulario__textarea{
-  width: 100%;
-  font-family: "DM Serif Display", serif;
-}
-
-.botones{
-  background-color: aquamarine;
-  width: 100%;
-  margin-top: 40px;
-  border-radius: 5px;
-
-}
 /* MEDIA QUEREIS TABLET */
 @media screen and (min-width: 768px) {
   /* INDEX NAV Y FOOTER */
   .navbar {
     padding-bottom: 50px;
   }
-
   .d-block {
     height: 300px;
   }
@@ -284,21 +301,14 @@ label{
   .main__container {
     margin: 0% 5%;
   }
-
   .productos__imagen {
     width: 200px;
     height: 200px;
   }
-
 }
-/* FIN MEDIA QUERIES TABLET */
-
 /* MEDIA QUERIES DESKTOP */
 @media screen and (min-width: 1024px) {
   /* INDEX */
-  body {
-    background-color: #fcf5c7;
-  }
   .button__navbar {
     max-height: 50px;
   }
@@ -314,7 +324,6 @@ label{
     font-size: 3em;
     margin-right: 50px;
   }
-
   .section--slider {
     margin-bottom: 40px;
     margin-top: 100px;
@@ -346,7 +355,7 @@ label{
     margin-bottom: 300px;
     border: 5px double #461220;
   }
-  .article__parrafo{
+  .article__parrafo {
     font-size: 30px;
   }
   iframe {
@@ -367,7 +376,6 @@ label{
     width: 100%;
     height: auto;
   }
-
   .input_email {
     width: 30%;
   }
@@ -397,7 +405,6 @@ label{
     margin-top: 50px;
     width: 15%;
   }
-
   .productos__imagen {
     width: 300px;
     height: 300px;
@@ -423,8 +430,7 @@ label{
     height: 25px;
     width: 25px;
   }
-
-   #formulario_pag {
+  #formulario_pag {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -459,4 +465,9 @@ label{
     width: 350px;
   }
 }
-/* FIN MEDIA QUERIES DESKTOP */
+@font-face {
+  font-family: "Tungsten";
+  src: url(../fonts/Tungsten-Bold.ttf) format("truetype");
+}
+
+/*# sourceMappingURL=styles.css.map */

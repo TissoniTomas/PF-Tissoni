@@ -1,0 +1,38 @@
+/* INICIO FOOTER */
+#footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__container {
+    display: block;
+    border-bottom: 1px solid wheat;
+    padding-top: 50px;
+  }
+  .footer__titulo {
+    font-family: "DM Serif Display", serif;
+    padding: 5px;
+  }
+  .footer__container--redes {
+    display: flex;
+    justify-content: center;
+  }
+  .redes__icono {
+    width: 50px;
+    margin: 25px;
+  }
+  .footer__container--newsletter {
+    padding-bottom: 30%;
+  }
+  .input_email {
+    margin-top: 20px;
+    width: 60%;
+  }
+  .footer__input--enviar {
+    border-radius: 20px;
+    background-color: #461220;
+    height: 40px;
+    width: 140px;
+    color: white;
+    margin-top: 20px;
+  }

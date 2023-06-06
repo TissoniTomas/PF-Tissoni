@@ -1,0 +1,47 @@
+/* INICIO CONTACTO */
+$background-titulos: #461220;
+$max-width: 100%;
+$limites-bloques: 1px solid black;
+$max-height: 100%;
+$margenes-bloques: 0% 5%;
+$formulario-fonts: "DM Serif Display", serif;
+
+#formulario_pag {
+    display: flex;
+    flex-direction: column;
+    border-bottom: $limites-bloques;
+    padding-bottom: 50px;
+    margin: $margenes-bloques;
+    text-align: center;
+    }
+ 
+  .formulario__elemento {
+    width: $max-width*0.8;
+    font-family: "DM Serif Display", serif;
+    border-radius: 5px;
+    text-align: center;
+  }
+  label{
+    color: yellow;
+    background-color: black;
+    margin: 20px 0px;
+  }
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  .formulario__textarea{
+    width: $max-width;
+    font-family: $formulario-fonts;
+  }
+  
+  .botones{
+    background-color: aquamarine;
+    width: $max-width;
+    margin-top: 40px;
+    border-radius: 5px;
+  
+  }
