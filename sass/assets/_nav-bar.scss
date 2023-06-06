@@ -1,22 +1,24 @@
 // INICIO NAVBAR
+
+$limite-navbar: 1px solid grey;
+$margenes-navbar: 0% 5%;
+$link-font: "Tungsten", sans-serif;
 .navbar {
-    border-bottom: 1px solid grey;
-    margin: 0% 5%;
-    .nav__logo {
-      width: 150px;
-      height: 150px;
-    }
+    border-bottom: $limite-navbar;
+    margin: $margenes-navbar;
   }
-  
+  .nav__logo {
+    width: 150px;
+    height: 150px;
+  }
   .nav-item {
     margin: 25px;
     &:hover {
         text-decoration: underline red;
     }
-    .nav-link {
-      font-family: "Tungsten", sans-serif;
-      font-size: 35px;
-    }
   }
   
- 
+  .nav-link {
+    font-family: $link-font;
+    font-size: 35px;
+  }
