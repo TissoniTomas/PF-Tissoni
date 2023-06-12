@@ -8,6 +8,29 @@ $limites-bloques: 1px solid black;
 $backgronund-color:#fcf5c7;
 $titulos-fuente: "Teko", sans-serif; 
 $productos-fuente: "Tungsten", sans-serif; 
+
+@mixin titulo($color-titulo:burlywood) { 
+  font-family: $titulos-fuente;
+  font-size: 30px;
+  color: $color-titulo;
+  background-color: #461220;
+  letter-spacing: 3px;
+  padding: 5%;
+  text-align: center;
+  
+}
+@mixin descripcion-productos{
+  font-family: $productos-fuente;
+    letter-spacing: 1px;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    border: 5px double #461220;
+    padding: 2%;
+    background-color: #cadbc0;
+    width: $max-width / 2;
+
+}
   /* INICIO INDEX */
   .bg-sds {
     background-color: #fcf5c7 !important;
@@ -28,13 +51,7 @@ $productos-fuente: "Tungsten", sans-serif;
   }
   
   .section__titulo {
-    font-family: $titulos-fuente;
-    font-size: 30px;
-    color: burlywood;
-    background-color: #461220;
-    letter-spacing: 3px;
-    padding: 5%;
-    text-align: center;
+   @include titulo()
   }
   
   .section__container {
@@ -46,15 +63,7 @@ $productos-fuente: "Tungsten", sans-serif;
   }
   
   .productos__descripcion {
-    font-family: $productos-fuente;
-    letter-spacing: 1px;
-    font-size: 150%;
-    font-weight: bold;
-    text-align: center;
-    border: 5px double #461220;
-    padding: 2%;
-    background-color: #cadbc0;
-    width: $max-width / 2;
+    @include descripcion-productos()
   }
   
   .article__iframe {

@@ -1,4 +1,10 @@
 /* MEDIA QUEREIS TABLET */
+$font-titulos: "Teko", sans-serif;
+$font-general: "DM Serif Display", serif;
+$margenes: 0% 5%;
+$max-height: 100%;
+$max-width: 100%;
+$backgronund-color: #fcf5c7;
 @media screen and (min-width: 768px) {
     /* INDEX NAV Y FOOTER */
     .navbar {
@@ -54,6 +60,11 @@
     .productos__imagen {
       width: 200px;
       height: 200px;
+    }
+
+    .formulario__textarea{
+      width: $max-width*0.8;
+      height: 100px;
     }
   
   }

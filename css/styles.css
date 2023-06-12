@@ -306,6 +306,10 @@ label {
     width: 200px;
     height: 200px;
   }
+  .formulario__textarea {
+    width: 80%;
+    height: 100px;
+  }
 }
 /* MEDIA QUERIES DESKTOP */
 @media screen and (min-width: 1024px) {
@@ -336,16 +340,14 @@ label {
     height: 100%;
   }
   .section__titulo {
-    font-family: "Teko", sans-serif;
-    color: burlywood;
     font-size: 70px;
     text-align: center;
-    background-color: #461220;
     padding: 0%;
   }
   .section__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
   }
   .productos__descripcion {
     margin-top: 20px;
@@ -368,6 +370,7 @@ label {
   .article__listado--marcas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     column-gap: 10%;
     align-items: center;
     width: 100%;
@@ -430,31 +433,27 @@ label {
     height: 25px;
     width: 25px;
   }
-  .formulario {
-    height: 200%;
+  #formulario_pag {
+    background-color: #fcf5c7;
+  }
+  #formulario_pag .formulario {
     text-align: center;
   }
-  input {
+  #formulario_pag .formulario input, #formulario_pag .formulario select, #formulario_pag .formulario label {
     height: 50px;
     font-size: 30px;
     margin-bottom: 30px;
   }
-  label {
-    font-size: 30px;
-    margin-bottom: 50px;
-  }
-  select {
+  #formulario_pag .formulario select {
     height: auto;
     width: auto;
-    font-size: 30px;
-    margin-bottom: 50px;
   }
-  .formulario__textarea {
+  #formulario_pag .formulario .formulario__textarea {
     font-size: 30px;
     height: 200px;
     width: 800px;
   }
-  .botones {
+  #formulario_pag .formulario .botones {
     width: 350px;
   }
 }
