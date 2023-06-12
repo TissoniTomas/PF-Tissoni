@@ -6,8 +6,14 @@ $max-height: 100%;
 $margenes-bloques: 0% 5%;
 $formulario-fonts: "DM Serif Display", serif;
 
-@keyframes fade-botones{
-  100% {background-image: linear-gradient(to right, orange,pink);}
+@keyframes fade-botones1{
+  100% {background-image: linear-gradient(to right, red,pink);}
+}
+@keyframes fade-botones2{
+  100% {background-image: linear-gradient(to right, orange,yellow);}
+}
+body{
+  background-color: #fcf5c7;
 }
 
 #formulario_pag {
@@ -45,15 +51,30 @@ $formulario-fonts: "DM Serif Display", serif;
   }
   
   .botones{
-    background-color: aquamarine;
     width: $max-width;
     margin-top: 40px;
     border-radius: 5px;
     font-family: $formulario-fonts;
-    &:hover{
-      animation-name: fade-botones;
+  
+  }
+  $botones: (
+    enviar: orange,
+    borrar: red,
+  );
+
+  $animaciones:(
+    enviar: fade-botones1,
+    borrar: fade-botones2,
+  );
+  @each $boton, $color in $botones{
+    .boton-#{$boton} {
+      background-color: $color;
+    }
+  }
+  @each $boton, $keyframe in $animaciones{
+    .boton-#{$boton}{
+      animation: $keyframe;
       animation-duration: 1s;
       animation-iteration-count: infinite;
     }
-  
   }

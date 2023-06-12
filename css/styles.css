@@ -169,11 +169,20 @@
 }
 
 /* INICIO CONTACTO */
-@keyframes fade-botones {
+@keyframes fade-botones1 {
   100% {
-    background-image: linear-gradient(to right, orange, pink);
+    background-image: linear-gradient(to right, red, pink);
   }
 }
+@keyframes fade-botones2 {
+  100% {
+    background-image: linear-gradient(to right, orange, yellow);
+  }
+}
+body {
+  background-color: #fcf5c7;
+}
+
 #formulario_pag {
   display: flex;
   flex-direction: column;
@@ -212,14 +221,28 @@ label {
 }
 
 .botones {
-  background-color: aquamarine;
   width: 100%;
   margin-top: 40px;
   border-radius: 5px;
   font-family: "DM Serif Display", serif;
 }
-.botones:hover {
-  animation-name: fade-botones;
+
+.boton-enviar {
+  background-color: orange;
+}
+
+.boton-borrar {
+  background-color: red;
+}
+
+.boton-enviar {
+  animation: fade-botones1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.boton-borrar {
+  animation: fade-botones2;
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
