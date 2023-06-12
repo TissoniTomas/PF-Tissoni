@@ -39,6 +39,12 @@
 .container__destacados--imagen {
   width: 100%;
 }
+.container__destacados--imagen:hover {
+  animation-name: animacion_productos;
+  animation-duration: 10s;
+  animation-iteration-count: 50%;
+  animation-timing-function: 5s;
+}
 
 .productos__descripcion {
   font-family: "Tungsten", sans-serif;
@@ -50,6 +56,23 @@
   padding: 2%;
   background-color: #cadbc0;
   width: 50%;
+}
+@keyframes animacion_productos {
+  0% {
+    width: 50%;
+  }
+  25% {
+    width: 75%;
+  }
+  50% {
+    width: 100%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 50%;
+  }
 }
 
 .article__iframe {
@@ -82,6 +105,11 @@
 .productos__imagen {
   width: 60%;
   height: 80%;
+  transition: all 2s;
+}
+.productos__imagen:hover {
+  height: 500px;
+  width: 500px;
 }
 
 .productos__card {
@@ -141,6 +169,11 @@
 }
 
 /* INICIO CONTACTO */
+@keyframes fade-botones {
+  100% {
+    background-image: linear-gradient(to right, orange, pink);
+  }
+}
 #formulario_pag {
   display: flex;
   flex-direction: column;
@@ -148,6 +181,7 @@
   padding-bottom: 50px;
   margin: 0% 5%;
   text-align: center;
+  background-color: #fcf5c7;
 }
 
 .formulario__elemento {
@@ -158,8 +192,8 @@
 }
 
 label {
-  color: yellow;
-  background-color: black;
+  color: black;
+  background-image: linear-gradient(to right, red, yellow);
   margin: 20px 0px;
 }
 
@@ -174,6 +208,7 @@ label {
 .formulario__textarea {
   width: 100%;
   font-family: "DM Serif Display", serif;
+  text-align: center;
 }
 
 .botones {
@@ -181,6 +216,12 @@ label {
   width: 100%;
   margin-top: 40px;
   border-radius: 5px;
+  font-family: "DM Serif Display", serif;
+}
+.botones:hover {
+  animation-name: fade-botones;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 .navbar {

@@ -20,7 +20,7 @@ $productos-fuente: "Tungsten", sans-serif;
   
 }
 @mixin descripcion-productos{
-  font-family: $productos-fuente;
+    font-family: $productos-fuente;
     letter-spacing: 1px;
     font-size: 150%;
     font-weight: bold;
@@ -30,6 +30,14 @@ $productos-fuente: "Tungsten", sans-serif;
     background-color: #cadbc0;
     width: $max-width / 2;
 
+@keyframes animacion_productos {
+  0% {width: 50%;}
+  25% {width: 75%;}
+  50% {width: 100%;}
+  75% {width: 75%;}
+  100% {width: 50%;} 
+   
+}
 }
   /* INICIO INDEX */
   .bg-sds {
@@ -60,6 +68,15 @@ $productos-fuente: "Tungsten", sans-serif;
   
   .container__destacados--imagen {
     width: $max-width;
+    &:hover{
+      animation-name: animacion_productos;
+      animation-duration: 10s;
+      animation-iteration-count: 50%;
+      animation-timing-function: 5s;
+
+    }
+   
+
   }
   
   .productos__descripcion {
