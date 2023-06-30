@@ -19,7 +19,7 @@ $backgronund-color: #fcf5c7;
       margin-top: 50px;
     }
     .section--slider {
-      margin: 0% 5%;
+      margin: $margenes
     }
     .section--lideresmarcas {
       margin: 10% 5%;
@@ -46,8 +46,8 @@ $backgronund-color: #fcf5c7;
       border-radius: 20px;
       background-color: #461220;
       color: white;
-      width: 25%;
-      height: 10%;
+      width: 17%;
+      height: 5%;
     }
     .input_email {
       width: 50%;
