@@ -67,7 +67,7 @@ $productos-fuente: "Tungsten", sans-serif;
   }
   
   .container__destacados--imagen {
-    width: $max-width;
+    width: $max-width*0.6;
     &:hover{
       animation-name: animacion_productos;
       animation-duration: 10s;

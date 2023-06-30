@@ -37,7 +37,7 @@
 }
 
 .container__destacados--imagen {
-  width: 100%;
+  width: 60%;
 }
 .container__destacados--imagen:hover {
   animation-name: animacion_productos;
